@@ -2,18 +2,65 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donaciones - Huellitas Comunitarias</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>Huellitas Comunitarias</h1>
+        <div class="header-container">
+            <h1>Huellitas Comunitarias</h1>
+            <p class="subtitulo">Proyecto PAEC</p>
+            <nav class="barra-navegacion">
+                <a href="index.html" class="boton-nav">Inicio</a>
+                <a href="adopciones.html" class="boton-nav">Adopciones</a>
+                <a href="donaciones.html" class="boton-nav activo">Donaciones</a>
+            </nav>
+        </div>
+        <img src="imagenes/logo.png" alt="Logo de Huellitas Comunitarias" class="logo-pequeno">
     </header>
-    <main>
-        <h2>Lista de Necesidades</h2>
+
+    <main class="layout-con-laterales">
+        <!-- Anuncios Lateral Izquierdo -->
+        <aside class="banner-lateral">
+            <p class="etiqueta-ads">Campañas</p>
+            
+            <a href="https://www.purina.com.mx/" target="_blank" class="tarjeta-ad">
+                <img src="imagenes/purina.png" alt="Purina Donaciones">
+                <span>🍲 Purina® Causa Social</span>
+                <p>Suma tu donativo en alimento seco.</p>
+            </a>
+        </aside>
+
+        <!-- Contenido Central -->
+        <section class="contenido-principal">
+            <article class="necesidades-suministros">
+                <h2>Lista de Necesidades</h2>
+                <img src="imagenes/donaciones.jpg" alt="Donaciones para mascotas" class="imagen-banner">
+                <p>Apóyanos con los siguientes insumos para el cuidado de los animales:</p>
+                <ul>
+                    <li><strong>Alimentos:</strong> Croquetas para perro y gato, así como alimento húmedo.</li>
+                    <li><strong>Abrigo:</strong> Cobijas, mantas y suéteres en buen estado.</li>
+                    <li><strong>Higiene:</strong> Desinfectantes, jabón, escobas y periódicos.</li>
+                    <li><strong>Médico:</strong> Material de curación básico (gasas, antisépticos).</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Anuncios Lateral Derecho -->
+        <aside class="banner-lateral">
+            <p class="etiqueta-ads">Patrocinadores</p>
+            
+            <a href="https://www.pedigree.com.mx/" target="_blank" class="tarjeta-ad">
+                <img src="imagenes/pedidree.png" alt="Pedigree">
+                <span>🐾 Pedigree®</span>
+                <p>Alimento balanceado para rescates.</p>
+            </a>
+        </aside>
     </main>
+
     <footer>
-        <p>Karla Gissel Arista Flores</p>
+        <p>&copy; 2026 Huellitas Comunitarias. Creado por Karla Gissel Arista Flores</p>
     </footer>
 </body>
 </html>
