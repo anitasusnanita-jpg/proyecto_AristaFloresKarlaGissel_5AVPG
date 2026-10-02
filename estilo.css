@@ -1,163 +1,39 @@
-/* ==========================================================================
-   HOJA DE ESTILOS - HUELLITAS COMUNITARIAS (BASE)
-   ========================================================================== */
-
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #FBF9F5;
-    font-family: Arial, sans-serif;
-    color: #332C27;
-}
-
-header {
-    background-color: #EAE3D2;
-    padding: 20px;
-}
-
-main {
-    padding: 20px;
-}
-
-footer {
-    background-color: #EAE3D2;
-    padding: 20px;
-    text-align: center;
-}
-/* Encabezado y Navegación */
-header {
+/* Galería de Adopciones */
+.galeria-mascotas {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #D8CEA8;
-}
-
-.header-container h1 {
-    margin: 0;
-    font-size: 26px;
-}
-
-.subtitulo {
-    margin: 4px 0 0 0;
-    font-size: 13px;
-    color: #C86D51;
-    font-weight: bold;
-}
-
-.logo-pequeno {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 1px solid #D8CEA8;
-}
-
-.barra-navegacion {
-    display: flex;
-    gap: 8px;
-    margin-top: 12px;
-} 
-
-.boton-nav {
-    text-decoration: none;
-    color: #332C27;
-    background-color: #FBF9F5;
-    padding: 8px 16px;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: bold;
-    border: 1px solid #D8CEA8;
-}
-
-.boton-nav.activo {
-    background-color: #C86D51;
-    color: #FFFFFF;
-}
-
-footer {
-    border-top: 1px solid #D8CEA8;
-}
-footer p {
-    margin: 0;
-    font-size: 13px;
-}
-/* Grid Principal con Laterales */
-main.layout-con-laterales {
-    display: grid;
-    grid-template-columns: 200px 1fr 200px;
+    flex-wrap: wrap;
     gap: 20px;
-    max-width: 1300px;
-    margin: 0 auto;
     width: 100%;
 }
 
-section.contenido-principal {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-/* Banners Laterales */
-.banner-lateral {
-    background-color: #F3EFE6;
-    border: 1px dashed #D8CEA8;
-    border-radius: 8px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.etiqueta-ads {
-    margin: 0;
-    font-size: 11px;
-    color: #888888;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-}
-
-.tarjeta-ad {
-    text-decoration: none;
-    color: #332C27;
-    font-size: 12px;
-    text-align: center;
+.ficha-mascota {
+    flex: 1 1 calc(33.333% - 14px);
+    min-width: 220px;
     background-color: #FFFFFF;
-    border: 1px solid #E5DFD3;
-    border-radius: 6px;
-    padding: 10px;
-}
-
-.tarjeta-ad img {
-    width: 100%;
-    max-height: 120px;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-/* Artículos */
-article {
-    background-color: #FFFFFF;
-    padding: 25px;
     border-radius: 8px;
     border: 1px solid #E5DFD3;
+    overflow: hidden;
 }
 
-article h2, article h3 {
-    margin-top: 0;
-    color: #C86D51;
-    border-bottom: 2px solid #EAE3D2;
-}
-
-article img.imagen-banner {
+.ficha-mascota img {
     width: 100%;
-    max-height: 350px;
+    height: 200px;
     object-fit: contain;
     background-color: #F3EFE6;
-    margin: 15px 0;
-    border-radius: 6px;
+    padding: 8px;
+}
+
+.ficha-info {
+    padding: 15px;
+}
+
+.ficha-info h3 {
+    margin: 0 0 10px 0;
+    color: #C86D51;
+    font-size: 18px;
+}
+
+.ficha-info p {
+    margin: 5px 0;
+    font-size: 14px;
 }
