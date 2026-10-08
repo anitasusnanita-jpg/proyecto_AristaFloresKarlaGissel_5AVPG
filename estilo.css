@@ -11,7 +11,7 @@ html, body {
     padding: 0;
     width: 100%;
     min-height: 100vh;
-    background-color: #FBF9F5;
+    background-color: #FBF9F5; /* Blanco hueso */
     font-family: Arial, Helvetica, sans-serif;
     color: #332C27;
     display: flex;
@@ -49,13 +49,12 @@ header {
     border: 1px solid #D8CEA8;
 }
 
-/* Navegación y botones */
+/* Navegación y Botones */
 .barra-navegacion {
     display: flex;
     gap: 8px;
     margin-top: 12px;
-    flex-wrap: wrap;
-}
+} 
 
 .boton-nav {
     text-decoration: none;
@@ -87,7 +86,7 @@ header {
     background-color: #C86D51;
 }
 
-/* Layout principal */
+/* Layout Principal con Banners Laterales */
 main.layout-con-laterales {
     display: grid;
     grid-template-columns: 200px 1fr 200px;
@@ -106,7 +105,7 @@ section.contenido-principal {
     gap: 25px;
 }
 
-/* Anuncios laterales */
+/* Estilos de los Anuncios Laterales */
 .banner-lateral {
     background-color: #F3EFE6;
     border: 1px dashed #D8CEA8;
@@ -148,7 +147,7 @@ section.contenido-principal {
 
 .tarjeta-ad:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
 .tarjeta-ad img {
@@ -164,16 +163,15 @@ section.contenido-principal {
     line-height: 1.2;
 }
 
-/* Tarjetas y contenido */
+/* Tarjetas y Contenido */
 article {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; 
     padding: 25px;
     border-radius: 8px;
     border: 1px solid #E5DFD3;
 }
 
-article h2,
-article h3 {
+article h2, article h3 {
     margin-top: 0;
     color: #C86D51;
     font-size: 20px;
@@ -205,7 +203,7 @@ article ul li strong {
     color: #8C4327;
 }
 
-/* Galería de adopciones */
+/* Galería de Adopciones */
 .galeria-mascotas {
     display: flex;
     flex-wrap: wrap;
@@ -250,7 +248,7 @@ article ul li strong {
 
 /* Pie de página */
 footer {
-    background-color: #EAE3D2;
+    background-color: #EAE3D2; 
     padding: 20px;
     text-align: center;
     border-top: 1px solid #D8CEA8;
@@ -266,7 +264,7 @@ footer p {
     color: #332C27;
 }
 
-/* Diseño adaptable */
+/* Diseño Adaptable (Móviles y Tabletas) */
 @media (max-width: 992px) {
     main.layout-con-laterales {
         grid-template-columns: 1fr;
@@ -284,25 +282,7 @@ footer p {
 }
 
 @media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-
-    .barra-navegacion {
-        justify-content: center;
-    }
-
     .tarjeta-ad {
         width: 100%;
-    }
-
-    article {
-        padding: 18px;
-    }
-
-    .ficha-mascota {
-        min-width: 100%;
     }
 }
